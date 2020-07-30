@@ -1,0 +1,129 @@
+* {
+  margin-top: 1.5%;
+}
+
+html, body {
+  padding: 5px;
+  margin-top: 10%;
+  margin-left: 10%;
+  background-color: #DCDCDC;
+  font-size: 125%;
+  font-family: 'Roboto', sans-serif;
+  color: #3C1053;
+}
+
+.button {
+  border: none;
+  border-radius: 10px;
+  padding: 5% 7%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 120%;
+  background-color: #3C1053;
+  color: #FFFFFF;
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 3%;
+}
+
+
+#inputLength{
+  width: 80%;
+  margin-top: 0%;
+}
+
+#buttonGenerate {
+  width: 60%; 
+  margin-left: 10%;
+  margin-bottom: 5%;
+}
+
+#textbox1 {
+  margin-bottom: -5px;
+}
+
+#password {
+  width: 80%;
+  margin-top: 1%;
+  margin-bottom: 15%;
+  cursor: pointer;
+}  
+
+.tip .tiptext {
+  visibility: hidden;
+  position: relative;
+  border-radius: 10px;
+  padding: 1%;
+  z-index: 1;
+  margin-left: -170px;
+  bottom: -50px;
+  background-color: #3C1053;
+  color: #FFFFFF;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tip:hover .tiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+::placeholder {
+  color: #3C1053;
+  opacity: 0.9;
+}
+
+input {
+  padding: 10px 10px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input:focus {
+  background-color: #EEEEEE;
+}
+
+input:hover {
+  background-color: #EEEEEE;
+}
+
+.container {
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+.label {
+  position: absolute;
+  bottom: 20px;
+  padding-left: 40px;
+  cursor: default;
+}
+
+.label input {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  border-radius: 5px;
+  bottom: 5px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+
+.label:hover input ~ .checkmark {
+  background-color: #EEEEEE;
+}
+
+.label input:checked ~ .checkmark {
+  background-color: #3C1053;
+}
+
